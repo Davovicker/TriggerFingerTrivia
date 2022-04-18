@@ -115,9 +115,11 @@ public class Question : MonoBehaviour
             
             if (countdownTime <= 0)
             {
-                countdownTime = 30;
+                //Change back to 30 SEC --------------------------------------------------------------------------------------
+                countdownTime = 10;
                 //firstQuestionComplete = true;
-               // GameManager.S.resetShooter();
+                // GameManager.S.resetShooter();
+                checkForEndGame();
             }
         }
 
@@ -142,7 +144,7 @@ public class Question : MonoBehaviour
          Debug.Log("New question = " + newQuestion);
 
          Debug.Log("first question is complete " + firstQuestionComplete);*/
-        checkForEndGame();
+        //checkForEndGame();
 
 
         //start with easy question
@@ -467,21 +469,21 @@ public class Question : MonoBehaviour
             P1Loses = true;
             Debug.Log("Cowboy Carlos Loses:" + P1Loses);
         }
-        else if (P2Health <= 0)
+        if (P2Health <= 0)
         {
             Debug.Log("Player two health is less than 0");
             P2Loses = true;
             Debug.Log("Dastardly Dave Loses:" + P2Loses);
 
         }
-        else if (P3Health <= 0)
+        if (P3Health <= 0)
         {
             Debug.Log("Player three health is less than 0");
             P3Loses = true;
             Debug.Log("Bandit Betty Loses:" + P3Loses);
 
         }
-        else if (P4Health <= 0)
+        if (P4Health <= 0)
         {
             Debug.Log("Player four health is less than 0");
             P4Loses = true;

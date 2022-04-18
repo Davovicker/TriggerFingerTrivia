@@ -6084,11 +6084,11 @@ MonoBehaviour:
   instructions: 
   answersChecklist: []
   newQuestion: 1
-  firstQuestionTime: 30
-  otherQuestionTime: 30
-  questionTime: 30
+  firstQuestionTime: 10
+  otherQuestionTime: 10
+  questionTime: 10
   countdownDisplay: {fileID: 1722626731}
-  countdownTime: 30
+  countdownTime: 10
 --- !u!114 &1725149040
 MonoBehaviour:
   m_ObjectHideFlags: 0
